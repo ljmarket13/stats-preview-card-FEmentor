@@ -1,0 +1,20 @@
+@media (max-width: 900px) {
+    .card {
+        flex-direction: column;
+        max-width: 500px;
+        text-align: center;
+
+        .info-card {
+            order: 1;
+
+            .stats {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+
+        img {
+            height: 375px;
+        }
+    }
+}

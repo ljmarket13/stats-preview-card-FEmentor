@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@import "config";
+@import "mobile";
 
 * {
     padding: 0;
@@ -7,12 +8,92 @@
 }
 
 body {
-    background-color: blue;
+    font-size: 15px;
+    background-color: $main-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    color: $main-heading;
+    font-family: $heading-font;
+    font-size: 2.5rem;
+
+    span {
+        color: $accent;
+    }
+}
+
+p {
+    color: $main-paragraph;
+    font-family: $para-font;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+table {
+    font-family: $heading-font;
+    text-align: left;
+    width: 100%;
+
+    tr th {
+        color: $main-heading;
+        font-size: 1.3rem;
+    }
+
+    tr td {
+        color: $main-paragraph;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+}
+
+img {
+    filter: opacity(0.3) drop-shadow(0 0 0 $accent);
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+
+    .info-card {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $card-background;
+    }
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        font-family: $heading-font;
+        color: $main-heading;
+    }
+
+    p {
+        color: $main-paragraph;
+    }
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: $main-paragraph;
+    font-family: $heading-font;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
