@@ -34,24 +34,6 @@ p {
     line-height: 1.6;
 }
 
-table {
-    font-family: $heading-font;
-    text-align: left;
-    width: 100%;
-
-    tr th {
-        color: $main-heading;
-        font-size: 1.3rem;
-    }
-
-    tr td {
-        color: $main-paragraph;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 0.8rem;
-    }
-}
-
 img {
     filter: opacity(0.3) drop-shadow(0 0 0 $accent);
 }
